@@ -22,9 +22,9 @@ function Hero() {
           <Text fontSize="2.25rem">Olá, eu sou o</Text>
           <Heading fontSize="9rem">Paulo Paes</Heading>
           <Text fontSize="2.25rem">Desenvolvedor Fullstack</Text>
-          <Text>
-            Lorem ipsum dolor sit amet. Ut consectetur voluptatem vel molestiae
-            error et nulla itaque sed internos esse ea voluptas.
+          <Text noOfLines={2} maxWidth="500px">
+            Atuo profissionalmente como desenvolvedor há um ano e sou estudante
+            de Gestão da Tecnologia da Informação na FATEC.
           </Text>
         </VStack>
         <HStack paddingLeft="3rem" gap="2rem">
