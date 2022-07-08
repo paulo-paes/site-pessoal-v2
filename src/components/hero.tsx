@@ -24,7 +24,7 @@ function Hero() {
           <Text fontSize="2.25rem">Desenvolvedor Fullstack</Text>
           <Text noOfLines={2} maxWidth="500px">
             Atuo profissionalmente como desenvolvedor há um ano e sou estudante
-            de Gestão da Tecnologia da Informação na FATEC.
+            de Análise e Desenvolvimento de Sistemas no IFSP.
           </Text>
         </VStack>
         <HStack paddingLeft="3rem" gap="2rem">
