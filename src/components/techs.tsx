@@ -25,7 +25,10 @@ import {
 function Techs() {
   return (
     <Box>
-      <SimpleGrid minChildWidth="5rem" gap="3rem">
+      <SimpleGrid
+        minChildWidth={{ base: '2.5rem', md: '3rem', xl: '5rem' }}
+        gap={{ base: '1.5rem', md: '2rem', xl: '3rem' }}
+      >
         <Tooltip label="HTML">
           <Box w="100%">
             <Icon as={DiHtml5} boxSize="100%" />

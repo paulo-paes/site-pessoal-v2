@@ -1,17 +1,20 @@
 import React from 'react'
 import NextLink from 'next/link'
 
-import { color, Link, useColorModeValue } from '@chakra-ui/react'
+import { Link, useColorModeValue } from '@chakra-ui/react'
 
 type NavLinkProps = {
-  href: string,
+  href: string
   label: string
   children?: React.ReactNode
 }
 
-
 function NavLink(props: NavLinkProps) {
-  const colorValue = useColorModeValue('brand.light.secondary', 'brand.dark.secondary')
+  const colorValue = useColorModeValue(
+    'brand.light.secondary',
+    'brand.dark.secondary'
+  )
+
   return (
     <NextLink href={props.href} passHref>
       <Link

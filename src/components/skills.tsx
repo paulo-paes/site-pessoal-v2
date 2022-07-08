@@ -2,8 +2,8 @@ import React from 'react'
 
 import {
   Box,
+  Flex,
   Heading,
-  HStack,
   Progress,
   Text,
   useColorModeValue,
@@ -27,16 +27,20 @@ function Skills() {
         <Heading fontSize="6rem" color={textColor}>
           Skills
         </Heading>
-        <HStack
+        <Flex
+          direction={{ base: 'column-reverse', '2xl': 'row' }}
           width="100%"
           paddingTop="2rem"
           alignItems="flex-start"
           gap="3rem"
         >
-          <Box color={textColor} maxWidth="50%" width="50%">
+          <Box
+            color={textColor}
+            width={{ base: '100%', lg: '100%', '2xl': '50%' }}
+          >
             <Techs />
           </Box>
-          <Box color={textColor} flexGrow="1">
+          <Box color={textColor} flexGrow="1" width="100%">
             <Text>Backend</Text>
             <Progress colorScheme="blue" size="sm" value={40} bg={progressBg} />
 
@@ -49,7 +53,7 @@ function Skills() {
             <Text marginTop="2rem">Angular</Text>
             <Progress colorScheme="blue" size="sm" value={80} bg={progressBg} />
           </Box>
-        </HStack>
+        </Flex>
       </Box>
     </Box>
   )
