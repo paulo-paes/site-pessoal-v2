@@ -14,7 +14,7 @@ function Footer() {
       paddingBlock="2rem"
     >
       <Text fontSize="1.5rem" color={textColor}>
-        © 2022 - Paulo Paes
+        © { new Date().getFullYear() } - Paulo Paes
       </Text>
     </Flex>
   )
