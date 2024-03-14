@@ -27,7 +27,7 @@ function Hero() {
           </Text>
           <Text
             noOfLines={{ base: 5, md: 2 }}
-            maxWidth={{ base: '100%', md: '500px' }}
+            maxWidth={{ base: '100%', md: '550px' }}
           >
             Atuo profissionalmente como desenvolvedor há três anos e sou estudante
             de Análise e Desenvolvimento de Sistemas no IFSP.
