@@ -42,7 +42,7 @@ function Skills() {
           </Box>
           <Box color={textColor} flexGrow="1" width={{base:"100%", '2xl': '50%'}}>
             <Text>Backend</Text>
-            <Progress colorScheme="blue" size="sm" value={40} bg={progressBg} />
+            <Progress colorScheme="blue" size="sm" value={90} bg={progressBg} />
 
             <Text marginTop="2rem">Frontend</Text>
             <Progress colorScheme="blue" size="sm" value={60} bg={progressBg} />
