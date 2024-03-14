@@ -29,7 +29,7 @@ function Hero() {
             noOfLines={{ base: 5, md: 2 }}
             maxWidth={{ base: '100%', md: '500px' }}
           >
-            Atuo profissionalmente como desenvolvedor há um ano e sou estudante
+            Atuo profissionalmente como desenvolvedor há três anos e sou estudante
             de Análise e Desenvolvimento de Sistemas no IFSP.
           </Text>
         </VStack>
