@@ -8,7 +8,7 @@ Para rodar o programa:
 
 ## Dependências
 
-- Node 16.15.1
+- Node 20.11.0
 - React 18.2
 - NextJs 12.2
 - ChakraUI 2.2.1
