@@ -15,7 +15,7 @@ function Hero() {
       <Flex direction={{ base: 'column', md: 'row' }}>
         <VStack alignItems="flex-start">
           <Text fontSize={{ base: '1.5rem', md: '2.25rem' }}>
-            Olá, eu sou o
+            Hi, I&apos;m
           </Text>
           <Heading
             fontSize={{ base: '3.5rem', md: '4rem', lg: '6rem', '2xl': '9rem' }}
@@ -23,14 +23,13 @@ function Hero() {
             Paulo Paes
           </Heading>
           <Text fontSize={{ base: '1.5rem', md: '2.25rem' }}>
-            Desenvolvedor Fullstack
+            Software Engineer
           </Text>
           <Text
-            noOfLines={{ base: 5, md: 2 }}
-            maxWidth={{ base: '100%', md: '550px' }}
+            noOfLines={{ base: 7, md: 4 }}
+            maxWidth={{ base: '100%', md: '650px' }}
           >
-            Atuo profissionalmente como desenvolvedor há três anos e sou estudante
-            de Análise e Desenvolvimento de Sistemas no IFSP.
+            I&apos;ve been working professionally as a software engineer for three years now, and I&apos;m currently pursuing a degree in Computer Software Engineering
           </Text>
         </VStack>
         <HStack

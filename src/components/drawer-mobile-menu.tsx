@@ -38,7 +38,7 @@ const DrawerMobileMenu = ({ isOpen, onClose }: DrawerMobileMenuProps) => {
             <Divider />
             {/* <NavLink href="#projetos" label="Projetos" /> */}
             {/* <NavLink href="#formacao" label="Formação" /> */}
-            <NavLink href="#contato" label="Contato" />
+            <NavLink href="#contato" label="Contact" />
           </VStack>
         </DrawerBody>
       </DrawerContent>

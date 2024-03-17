@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <Box width="100%">
       <Head>
         <title>Paulo Paes</title>
-        <meta name="description" content="Paulo Paes desenvolvedor fullstack" />
+        <meta name="description" content="Paulo Paes Software Engineering, Node.JS Specialist" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
