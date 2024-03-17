@@ -47,7 +47,7 @@ function Navbar() {
               <NavLink href="#skills" label="Skills" />
               {/* <NavLink href="#projetos" label="Projetos" /> */}
               {/* <NavLink href="#formacao" label="Formação" /> */}
-              <NavLink href="#contato" label="Contato" />
+              <NavLink href="#contato" label="Contact" />
             </HStack>
             <IconButton
               variant="ghost"
