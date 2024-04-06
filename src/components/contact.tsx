@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Heading, HStack, Text, Tooltip, VStack } from '@chakra-ui/react'
+import { Box, Heading, HStack, VStack } from '@chakra-ui/react'
 import SocialMediaIcons from './social-media-icons'
 
 function Contact() {
@@ -12,10 +12,7 @@ function Contact() {
       marginBlock="3rem"
     >
       <VStack gap="2rem" marginTop="2rem">
-      <Heading fontSize="6rem">Contact</Heading>
-        <Tooltip label="Email">
-          <Text fontSize="1.2rem">phpaes99@gmail.com</Text>
-        </Tooltip>
+        <Heading fontSize={{ base: "3rem", md: "6rem" }}>Contact</Heading>
         <HStack gap="1rem">
           <SocialMediaIcons />
         </HStack>

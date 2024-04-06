@@ -40,19 +40,6 @@ function Skills() {
           >
             <Techs />
           </Box>
-          <Box color={textColor} flexGrow="1" width={{base:"100%", '2xl': '50%'}}>
-            <Text>Backend</Text>
-            <Progress colorScheme="blue" size="sm" value={90} bg={progressBg} />
-
-            <Text marginTop="2rem">Frontend</Text>
-            <Progress colorScheme="blue" size="sm" value={60} bg={progressBg} />
-
-            <Text marginTop="2rem">React</Text>
-            <Progress colorScheme="blue" size="sm" value={80} bg={progressBg} />
-
-            <Text marginTop="2rem">Angular</Text>
-            <Progress colorScheme="blue" size="sm" value={80} bg={progressBg} />
-          </Box>
         </Flex>
       </Box>
     </Box>
