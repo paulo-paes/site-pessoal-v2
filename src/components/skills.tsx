@@ -14,7 +14,6 @@ import Techs from './techs'
 function Skills() {
   const bgColor = useColorModeValue('gray.800', 'whiteAlpha.900')
   const textColor = useColorModeValue('whiteAlpha.900', 'gray.800')
-  const progressBg = useColorModeValue('whiteAlpha.900', 'whiteAlpha.900')
   return (
     <Box
       id="skills"
@@ -24,7 +23,11 @@ function Skills() {
       minHeight="30rem"
     >
       <Box width="70%" marginInline="auto" paddingBlock="5rem">
-        <Heading fontSize="6rem" color={textColor}>
+        <Heading
+          fontSize="6rem"
+          textAlign="center"
+          color={textColor}
+          margin="auto">
           Skills
         </Heading>
         <Flex
@@ -36,7 +39,8 @@ function Skills() {
         >
           <Box
             color={textColor}
-            width={{ base: '100%', lg: '100%', '2xl': '50%' }}
+            width={{ base: '100%', '2xl': '75%' }}
+            margin="auto"
           >
             <Techs />
           </Box>
