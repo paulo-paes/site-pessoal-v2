@@ -29,7 +29,7 @@ function Hero() {
             noOfLines={{ base: 7, md: 4 }}
             maxWidth={{ base: '100%', md: '650px' }}
           >
-            I&apos;ve been working professionally as a software engineer for 3.5 years and I&apos;m currently pursuing a degree in Computer Software Engineering
+            I&apos;ve been working professionally as a software engineer for 4 years and I have a bachelor's degree in Systems Analysis and Development.
           </Text>
         </VStack>
         <HStack
