@@ -23,13 +23,14 @@ function Hero() {
             Paulo Paes
           </Heading>
           <Text fontSize={{ base: '1.5rem', md: '2.25rem' }}>
-            Software Engineer
+            Java Software Engineer
           </Text>
           <Text
             noOfLines={{ base: 7, md: 4 }}
             maxWidth={{ base: '100%', md: '650px' }}
+            lineHeight="1.8"
           >
-            I&apos;ve been working professionally as a software engineer for 4 years and I have a bachelor&apos;s degree in Systems Analysis and Development.
+            4+ years of experience building scalable backend systems with Java, Spring Boot, and cloud technologies. Bachelor&apos;s degree in Systems Analysis and Development.
           </Text>
         </VStack>
         <HStack

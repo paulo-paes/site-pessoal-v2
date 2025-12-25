@@ -2,49 +2,37 @@ import React from 'react'
 
 import {
   Box,
-  Flex,
   Heading,
-  Progress,
-  Text,
   useColorModeValue,
 } from '@chakra-ui/react'
 
 import Techs from './techs'
 
 function Skills() {
-  const bgColor = useColorModeValue('gray.800', 'whiteAlpha.900')
-  const textColor = useColorModeValue('whiteAlpha.900', 'gray.800')
+  const headingColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+  const iconColor = useColorModeValue('gray.800', 'whiteAlpha.900')
   return (
     <Box
       id="skills"
       width="100%"
-      marginTop="5rem"
-      bg={bgColor}
-      minHeight="30rem"
+      paddingBlock="4rem"
     >
-      <Box width="70%" marginInline="auto" paddingBlock="5rem">
+      <Box width="70%" marginInline="auto">
         <Heading
-          fontSize="6rem"
+          fontSize={{ base: '2.5rem', md: '4rem' }}
           textAlign="center"
-          color={textColor}
-          margin="auto">
+          color={headingColor}
+          marginBottom="3rem"
+        >
           Skills
         </Heading>
-        <Flex
-          direction={{ base: 'column-reverse', '2xl': 'row' }}
-          width="100%"
-          paddingTop="2rem"
-          alignItems="flex-start"
-          gap="3rem"
+        <Box
+          color={iconColor}
+          width={{ base: '100%', '2xl': '75%' }}
+          margin="auto"
         >
-          <Box
-            color={textColor}
-            width={{ base: '100%', '2xl': '75%' }}
-            margin="auto"
-          >
-            <Techs />
-          </Box>
-        </Flex>
+          <Techs />
+        </Box>
       </Box>
     </Box>
   )

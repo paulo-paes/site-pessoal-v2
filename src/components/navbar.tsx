@@ -8,66 +8,56 @@ import {
   Text,
   useColorMode,
   useColorModeValue,
-  useDisclosure,
 } from '@chakra-ui/react'
 
-import NavLink from './nav-link'
-import { BsFillSunFill, BsFillMoonFill } from 'react-icons/bs'
-import { BiMenu } from 'react-icons/bi'
-import DrawerMobileMenu from './drawer-mobile-menu'
+import AppLink from './app-link'
+import { BsFillSunFill, BsFillMoonFill, BsGithub, BsLinkedin } from 'react-icons/bs'
 
 function Navbar() {
-  const { onOpen, onClose, isOpen } = useDisclosure()
   const { colorMode, toggleColorMode } = useColorMode()
   const bgColor = useColorModeValue('whiteAlpha.900', 'gray.800')
 
-  const handleOpenMenu = () => {
-    onOpen()
-  }
-
   return (
-    <>
-      <Flex
-        width="100%"
-        justifyContent="space-around"
-        paddingBlock="1.2rem"
-        position="fixed"
-        bg={bgColor}
-        top="0"
-        zIndex="2"
-      >
-        <Box>
-          <Text fontSize={{ base: '1.6rem', md: '2.5rem' }}>
-            {'<paulo-paes>'}
-          </Text>
-        </Box>
-        <Box>
-          <HStack gap="2rem" width="100%" height="100%">
-            <HStack display={{ base: 'none', md: 'flex' }} gap="2rem">
-              <NavLink href="#skills" label="Skills" />
-              {/* <NavLink href="#projetos" label="Projetos" /> */}
-              {/* <NavLink href="#formacao" label="Formação" /> */}
-              <NavLink href="#contato" label="Contact" />
-            </HStack>
-            <IconButton
-              variant="ghost"
-              aria-label="change-theme"
-              icon={
-                colorMode === 'light' ? <BsFillMoonFill /> : <BsFillSunFill />
-              }
-              onClick={toggleColorMode}
-            />
-            <IconButton
-              aria-label="menu"
-              icon={<BiMenu />}
-              display={{ base: 'inherit', md: 'none' }}
-              onClick={handleOpenMenu}
-            />
-          </HStack>
-        </Box>
-      </Flex>
-      <DrawerMobileMenu isOpen={isOpen} onClose={onClose} />
-    </>
+    <Flex
+      width="100%"
+      justifyContent="space-between"
+      paddingBlock="1.2rem"
+      paddingInline={{ base: '1.5rem', md: '3rem' }}
+      position="fixed"
+      bg={bgColor}
+      top="0"
+      zIndex="2"
+    >
+      <Box>
+        <Text fontSize={{ base: '1.4rem', md: '2rem' }}>
+          {'<paulo-paes>'}
+        </Text>
+      </Box>
+      <HStack gap={{ base: '0.5rem', md: '1rem' }}>
+        <AppLink href="https://github.com/paulo-paes">
+          <IconButton
+            variant="ghost"
+            aria-label="GitHub"
+            icon={<BsGithub />}
+          />
+        </AppLink>
+        <AppLink href="https://www.linkedin.com/in/paulo-paes7/">
+          <IconButton
+            variant="ghost"
+            aria-label="LinkedIn"
+            icon={<BsLinkedin />}
+          />
+        </AppLink>
+        <IconButton
+          variant="ghost"
+          aria-label="change-theme"
+          icon={
+            colorMode === 'light' ? <BsFillMoonFill /> : <BsFillSunFill />
+          }
+          onClick={toggleColorMode}
+        />
+      </HStack>
+    </Flex>
   )
 }
 

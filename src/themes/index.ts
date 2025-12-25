@@ -15,7 +15,9 @@ const colors = {
 }
 
 const fonts = {
-  body: 'montserrat, sans-serif',
+  body: '"JetBrains Mono", monospace',
+  heading: '"JetBrains Mono", monospace',
+  mono: '"JetBrains Mono", monospace',
 }
 
 const config: ThemeConfig = {
